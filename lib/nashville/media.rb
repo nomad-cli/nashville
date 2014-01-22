@@ -60,7 +60,7 @@ module Nashville
             params[:entity] = self.entity
 
             results = self.delegator.search(params)
-            results.collect{|result| self.new(result)}
+            results.collect{|result| self.new(result.to_h)}
           end
         end
       end
@@ -70,8 +70,18 @@ module Nashville
   include Media
 
   class << self
-    def search(params = {})
-      client.search(params)
+    def search(*args)
+      params = args.last.is_a?(Hash) ? args.pop : {}
+      params[:term] ||= args.shift
+
+      client.search(params).collect{|result| Hashie::Rash.new(result)}
+    end
+
+    def lookup(*args)
+      params = args.last.is_a?(Hash) ? args.pop : {}
+      params[:id] ||= args.shift
+
+      client.lookup(params).collect{|result| Hashie::Rash.new(result)}
     end
 
     private
