@@ -3,6 +3,7 @@
 Nashville is a wrapper and command line interface for querying the iTunes Store API.
 
 > Nashville is named after the [eponymous Capital of Country Music (and Tennesee)](http://en.wikipedia.org/wiki/Nashville,_Tennessee), home of [the Grand 'Ole Opry](http://en.wikipedia.org/wiki/Grand_Ole_Opry) and the [Country Music Hall of Fame and Museum](http://en.wikipedia.org/wiki/Country_Music_Hall_of_Fame_and_Museum).
+
 > It's part of a series of world-class command-line utilities for iOS development, which includes [Cupertino](https://github.com/mattt/cupertino) (Apple Dev Center management), [Shenzhen](https://github.com/mattt/shenzhen) (Building & Distribution), [Houston](https://github.com/mattt/houston) (Push Notifications), [Venice](https://github.com/mattt/venice) (In-App Purchase Verification), and [Dubai](https://github.com/mattt/dubai) (Passbook pass generation).
 
 ## Installation
