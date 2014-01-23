@@ -56,8 +56,8 @@ module Nashville
               end
             end
 
-            params[:media] = self.media
-            params[:entity] = self.entity
+            params[:media] ||= self.media
+            params[:entity] ||= self.entity
 
             results = self.delegator.search(params)
             results.collect{|result| self.new(result.to_h)}
