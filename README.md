@@ -1,6 +1,6 @@
 # Nashville
 
-Nashville is a wrapper and command line interface for querying the iTunes Store API.
+Nashville is a wrapper and command line interface for querying the [iTunes Store API](http://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html).
 
 > Nashville is named after the [eponymous Capital of Country Music (and Tennesee)](http://en.wikipedia.org/wiki/Nashville,_Tennessee), home of [the Grand 'Ole Opry](http://en.wikipedia.org/wiki/Grand_Ole_Opry) and the [Country Music Hall of Fame and Museum](http://en.wikipedia.org/wiki/Country_Music_Hall_of_Fame_and_Museum).
 
@@ -19,6 +19,8 @@ Nashville::Movie.search(director: "Wes Anderson")
 
 Nashville::Music::Artist.search(artist: "Miles Davis", limit: 5)
 ```
+
+> For more information about parameters and general usage, check out [Apple's documentation for the iTunes Affiliate Search API](http://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html).
 
 ## Command Line Interface
 
