@@ -32,7 +32,7 @@ command :search do |c|
   c.example 'search', 'its search "Jamiroquai"'
 
   c.action do |args, options|
-    say_error "Missing receipt argument" and abort unless term = args.first
+    say_error "Missing search term" and abort unless term = args.first
 
     params = {}
     params[:term] = term
