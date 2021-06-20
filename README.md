@@ -88,9 +88,6 @@ Nashville also comes with the `its` binary, which allows you to query the iTunes
 
     ...
 
-## Creator
-
-Mattt Thompson ([@mattt](https://twitter.com/mattt))
 
 ## License
 
